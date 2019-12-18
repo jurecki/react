@@ -6,6 +6,7 @@ const Button = ({variant = '', ...otherProps}) => (
     {...otherProps} 
     className={styles.component + variant.split(' ').map(name => ' ' + (styles[name] || name)).join('')}
   />
-);
+
+  );
 
 export default Button;
