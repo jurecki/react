@@ -33,6 +33,14 @@ class Search extends React.Component {
     this.props.changeSearchString(this.state.value);
   }
 
+
+  handleCancel(){
+    this.setState({
+      value: '',
+      visibleButtons: false,
+    });
+  }
+
   componentDidUpdate(prevProps){
     if(this.props.searchString != prevProps.searchString){
       this.setState({value: this.props.searchString});
@@ -53,6 +61,7 @@ class Search extends React.Component {
         />
         <div className={styles.buttons + (this.state.visibleButtons ? ' ' + styles.buttonsShown : '')}>
           <Button onClick={() => this.handleOK()}><Icon name={icon} /></Button>
+          <Button onClick={() => this.handleCancel()} variant='danger'>cancel</Button>
         </div>
         <div>
           { countVisible == countAll ? '' : `${countVisible} / ${countAll}` }
