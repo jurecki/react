@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './column.scss';
+import styles from './Column.scss';
 import PropTypes from 'prop-types';
 import Card from '../Card/Card';
 import Creator from '../Creator/Creator';
