@@ -12,11 +12,24 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  logoIcon: 'book',
 };
 
 export const pageContents = {
   title: 'My first React app',
   subtitle: 'A simple to-do app, with lists, columns and cards',
+};
+
+export const pageInfo = {
+  title: 'About us',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  content: 'Phasellus pulvinar, nibh vitae molestie imperdiet, justo purus vehicula sem, a hendrerit tellus mi quis magna. Donec efficitur nec sem suscipit dictum. Donec eget pharetra nulla. Fusce tellus elit, ullamcorper id egestas at, vestibulum ac sem. Curabitur pulvinar interdum leo ut volutpat. Cras euismod lectus nec hendrerit rutrum. In hac habitasse platea dictumst.',
+};
+
+export const pageFAQ = {
+  title: 'FAQ',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  content: 'Ut ligula elit, faucibus nec ultrices at, convallis feugiat metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nec lorem sit amet velit vestibulum ultrices in sed sapien. Nulla facilisi. Vivamus in felis metus. Pellentesque porttitor id felis eget luctus. Maecenas non felis at augue interdum faucibus vel eu sapien. Suspendisse rhoncus quis quam eget efficitur.',
 };
 
 export const listData = {

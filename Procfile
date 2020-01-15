@@ -1,1 +1,1 @@
-web: http-server --proxy http://localhost:8080?
+web: npm run server

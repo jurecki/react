@@ -1,25 +1,15 @@
 import React from 'react';
 import Container from '../Container/Container';
 import Hero from '../Hero/Hero';
-import PropTypes from 'prop-types';
+import {pageInfo} from '../../data/dataStore';
 
 
-class Info extends React.Component {
-    static propTypes = {
-      title: PropTypes.node,
-    }
+const Info = () => (
+  <Container>
+    <Hero titleText={pageInfo.title} source={pageInfo.image} />
+    {pageInfo.content};
+  </Container>
+);
 
-    render() {
-      const {title} = this.props;
-
-      return (
-        <Container>
-          <Hero titleText={title} />
-          <h2>Info</h2>
-          <p>Lorem ipsum dolor sit amet,</p>
-        </Container>
-      );
-    }
-}
 
 export default Info;
