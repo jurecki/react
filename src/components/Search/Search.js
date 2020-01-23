@@ -11,7 +11,6 @@ class Search extends React.Component {
   static propTypes = {
     text: PropTypes.string,
     searchString: PropTypes.string,
-    changeSearchString: PropTypes.func,
     countVisible: PropTypes.number,
     countAll: PropTypes.number,
     history: PropTypes.object,
@@ -33,8 +32,8 @@ class Search extends React.Component {
   }
 
   handleOK(){
-    this.props.changeSearchString(this.state.value);
     this.props.history.push(`/search/${this.state.value}`);
+    
   }
 
 
@@ -57,6 +56,7 @@ class Search extends React.Component {
     const {icon} = settings.search;
     return (
       <Container>
+        {console.log(this)}
         <div className={styles.component}>
           <input
             type='text'
