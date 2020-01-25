@@ -31,9 +31,16 @@ class Search extends React.Component {
     });
   }
 
+  componentDidMount() {
+    this.setState({
+      visibleButtons: true,
+    });
+  }
+
+
   handleOK(){
     this.props.history.push(`/search/${this.state.value}`);
-    
+   
   }
 
 

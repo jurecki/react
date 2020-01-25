@@ -14,6 +14,11 @@ class SearchResult extends React.Component {
 
   state = {
     value: this.props.location.pathname.replace('/search/', ''),
+    visibleButtons: true,
+  }
+
+  onUnload(event) { 
+    console.log('page Refreshed',event);
   }
   
   render () {
